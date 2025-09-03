@@ -56,7 +56,8 @@ body{
   border-style: none ;
   font-size: 0.6rem;
   background-color: hsl(3, 71%, 56%); 
-  color: hsl(226, 25%, 17%);
+  color: hsl(226, 25%, 17%); 
+  cursor: pointer;
 } 
 
 .cta-active,.cta-inactive{ 
@@ -65,6 +66,7 @@ body{
   font-size: 0.6rem; 
   background-color: hsl(225, 23%, 24%); 
   border-style: none; 
+  cursor: pointer;
   color: hsl(200, 60%, 99%);
 } 
 
