@@ -1,0 +1,32 @@
+.container{
+  max-width: 75rem; 
+  margin: 0 auto;
+} 
+
+.py {
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+}
+
+.px {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+} 
+
+.mt{ 
+   margin-top: 1.875rem; 
+}  
+
+.card{ 
+  width: 100%;   
+  max-width: 18rem; 
+  /* min-width: 10rem; */
+  height: 150px; 
+  background-color:hsl(226, 25%, 17%); 
+  border-radius: 20px; 
+  border: 1px solid hsl(226, 11%, 37%);
+
+}
+
+
+

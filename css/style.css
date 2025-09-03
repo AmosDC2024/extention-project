@@ -1,0 +1,178 @@
+*{
+  box-sizing: border-box; 
+  padding: 0; 
+  margin: 0;
+}
+
+html{
+  font-size: 16px
+} 
+
+body{ 
+  background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+  min-height: 100vh; 
+  color: white; 
+  padding:0 5rem;
+}
+
+.extention{ 
+  max-width: 55rem; 
+  height: 50px; 
+  margin: 0 auto; 
+  border-radius: 10px;   
+  background-color: hsl(226, 25%, 17%);
+  display: flex; 
+  justify-content: space-between; 
+  /* padding: 10px 20px; */
+}  
+
+.logo{  
+  columns: white;
+} 
+
+.nav{ 
+  display: flex;  
+  justify-content: space-between; 
+  max-width: 55rem;
+  margin: 0 auto;
+
+} 
+
+.nav>h1{ 
+  font-size: 2rem; 
+  color: hsl(200, 60%, 99%); 
+  font-weight: 400;
+}
+
+.nav-cta{  
+    gap: 0.5rem; 
+    display: flex;
+} 
+
+.cta-all{ 
+  padding: 0.5px 15px; 
+  border-radius: 15px; 
+  text-align: center; 
+  border-style: none ;
+  font-size: 0.6rem;
+  background-color: hsl(3, 71%, 56%); 
+  color: hsl(226, 25%, 17%);
+} 
+
+.cta-active,.cta-inactive{ 
+  padding: 0rem 1.4rem; 
+  border-radius: 1rem; 
+  font-size: 0.6rem; 
+  background-color: hsl(225, 23%, 24%); 
+  border-style: none; 
+  color: hsl(200, 60%, 99%);
+} 
+
+.grid-container{ 
+  display: grid; 
+  grid-template-columns: repeat(3,1fr); 
+  grid-template-rows: repeat(4,1fr); 
+  width: 100%;  
+  grid-gap: 0.6rem;  
+  max-width: 55rem;   
+  padding-bottom: 3rem;   
+  margin: 0 auto;
+  /* padding: 0 3rem 3rem 3rem; */
+}  
+
+.dev-lens{ 
+  display: flex;  
+  gap: 10px;
+  justify-content: center; 
+  align-items: flex-start; 
+  padding: 1rem 1rem;  
+  font-size: 0.7rem;
+  
+}  
+
+.dev-lens p{
+  font-size: 0.8rem; 
+  color: hsl(226, 11%, 37%);
+}
+
+.lens{ 
+  display: flex; 
+  flex-direction: column; 
+  gap: 5px;
+} 
+
+h2{ 
+  font-size: 1rem; 
+  font-weight: 500;
+}
+.dev-lens>img{ 
+  width: 40px;
+}
+
+
+.toggle-wrapper{ 
+  display: flex;
+   justify-content: space-between;  
+    padding: 0 1rem 1rem 1rem;  
+} 
+
+.cta-remove{
+  padding:0.3rem 0.5rem; 
+  border-radius: 20px; 
+  color: hsl(200, 60%, 99%); 
+  border: 1px solid hsl(226, 11%, 37%); 
+  background-color: transparent;
+}
+
+
+/* The track */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Hide the default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider (track background) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:hsl(226, 11%, 37%);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* The knob */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state (track + knob) */
+.toggle-switch input:checked + .slider {
+  background-color: hsl(3, 86%, 64%);
+}
+
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* i have 12 grid items, i then specify  the grid template row as 3fr, 1fr, 1fr,1fr. how does the grid layout manage it? how come i the items are not shared into 4rows as specified? how the browser get the fr in px? */

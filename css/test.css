@@ -1,0 +1,47 @@
+body{
+  background-color: brown;
+} 
+
+.toggle-switch{
+  width: 50px;
+  height: 20px;  
+  display: inline-block;
+  background-color: aqua; 
+  border-radius: 15px; 
+  position: relative; 
+   cursor: pointer;
+
+
+} 
+
+.slider{ 
+  position: absolute; 
+  min-width: 15px; 
+  min-height: 15px; 
+  background-color: red; 
+   border-radius: 50%; 
+   top: 2.5px;
+   left: 2.5px; 
+     transition: 0.4s; 
+
+    
+  /* transform: translate(-50%,-50%);   */
+  /* top: 50%;  */
+  /* left: 50%; */
+  /* left: 0; */
+  /* bottom: 0; */
+  /* margin: auto 0; */
+}  
+
+input:checked +.slider{ 
+  background-color: black; 
+  transform: translate(30px); 
+} 
+
+input:checked .toggle-switch{
+  background-color: blue;
+}
+
+.toggle-switch input{ 
+  opacity: 0;
+}
