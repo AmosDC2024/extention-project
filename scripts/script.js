@@ -5,7 +5,8 @@ const modeToggle = document.querySelector(".mode-toggle")
 const extention = document.querySelector(".extention")  
 const card = document.querySelectorAll(".card")  
 const head = document.querySelectorAll("h2") 
-const ctaRemove = document.querySelectorAll(".cta-remove")  
+const ctaRemove = document.querySelectorAll(".cta-remove")   
+const extentionList = document.querySelector("h1");
 console.log(ctaRemove);
 
 
@@ -34,7 +35,9 @@ function mode(){
   
   ctaRemove.forEach((item)=>{
     item.classList.add("cta-light-mode")
-  });
+  }); 
+
+  extentionList.style.color = "hsl(226, 25%, 17%)";
 
   // head.classList.add("light-mode");
 } ;
