@@ -26,9 +26,9 @@ body{
   /* padding: 10px 20px; */
 }  
 
-.logo{  
-  columns: white;
-} 
+.mode-toggle{ 
+  cursor: pointer;
+}
 
 .nav{ 
   display: flex;  
@@ -123,7 +123,8 @@ h2{
   border-radius: 20px; 
   color: hsl(200, 60%, 99%); 
   border: 1px solid hsl(226, 11%, 37%); 
-  background-color: transparent;
+  background-color: transparent; 
+  cursor: pointer;
 }
 
 
@@ -175,6 +176,17 @@ h2{
 
 .toggle-switch input:checked + .slider::before {
   transform: translateX(24px);
+} 
+
+
+/* lightmode */ 
+
+.light-mode{ 
+  color: hsl(226, 25%, 17%);
+}
+
+.cta-light-mode{ 
+  color: hsl(226, 25%, 17%);
 }
 
 /* i have 12 grid items, i then specify  the grid template row as 3fr, 1fr, 1fr,1fr. how does the grid layout manage it? how come i the items are not shared into 4rows as specified? how the browser get the fr in px? */
