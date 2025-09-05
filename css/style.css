@@ -181,12 +181,24 @@ h2{
 
 /* lightmode */ 
 
+.dark-mode{ 
+  color:  hsl(200, 60%, 99%);
+  /* font-weight: 600; */
+  
+}
+
+.cta-dark-mode{ 
+  color: hsl(200, 60%, 99%);
+}
+
 .light-mode{ 
-  color: hsl(226, 25%, 17%);
+  color:hsl(227, 75%, 14%);
+  /* font-weight: 600; */
+  
 }
 
 .cta-light-mode{ 
-  color: hsl(226, 25%, 17%);
+  color:hsl(227, 75%, 14%) ;
 }
 
 /* i have 12 grid items, i then specify  the grid template row as 3fr, 1fr, 1fr,1fr. how does the grid layout manage it? how come i the items are not shared into 4rows as specified? how the browser get the fr in px? */
