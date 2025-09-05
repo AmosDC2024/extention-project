@@ -23,10 +23,19 @@
   /* min-width: 10rem; */
   height: 150px; 
   background-color:hsl(226, 25%, 17%); 
-  border-radius: 20px; 
-  border: 1px solid hsl(226, 11%, 37%);
+  border-radius: 20px;  
+  box-shadow: 1px 1px hsl(226, 11%, 37%) ;
+  /* border: 1px solid hsl(226, 11%, 37%); */
 
 }
+/* 
+@media (max-width:380px){  
+  .card{ 
+    margin: 0 auto; 
+    align-items: center; 
+    justify-content: center;
+   }
+} */
 
 
 

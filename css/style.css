@@ -115,7 +115,8 @@ h2{
 .toggle-wrapper{ 
   display: flex;
    justify-content: space-between;  
-    padding: 0 1rem 1rem 1rem;  
+    padding: 0 1rem 1rem 1rem;   
+    margin-top: 1.852rem;
 } 
 
 .cta-remove{
@@ -199,6 +200,69 @@ h2{
 
 .cta-light-mode{ 
   color:hsl(227, 75%, 14%) ;
+} 
+
+
+@media (max-width:980px) { 
+  .toggle-wrapper{
+    margin-top: 1rem;
+  }
+  
+}
+@media (max-width:815px) { 
+    .grid-container{ 
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:620px) { 
+    .grid-container{ 
+      grid-template-columns:1fr;
+    } 
+
+    .nav{ 
+      flex-direction: column;  
+      align-items: center; 
+      gap: 1rem;
+    } 
+
+    .cta-active,.cta-inactive{ 
+      padding: 1rem 1.5rem; 
+      border-radius: 9999px;
+    } 
+
+    .cta-all{
+        padding: 1rem 1.5rem; 
+        border-radius: 9999px;
+    }
+} 
+
+@media (max-width:380px) {  
+     .cta-active,.cta-inactive{ 
+      padding: 0rem 0.6rem; 
+      border-radius: 9999px;
+    } 
+
+    .cta-all{
+        padding: 0.5rem 0.6rem; 
+        border-radius: 9999px;
+    } 
+
+    .nav>h1{ 
+      font-size: 1.5rem;
+    } 
+
+   .logo{ 
+    width: 80px;
+   } 
+
+   .mode-toggle{ 
+    width: 20px;
+   } 
+
+   .card{ 
+    margin: 0 auto;
+   }
+  
 }
 
 /* i have 12 grid items, i then specify  the grid template row as 3fr, 1fr, 1fr,1fr. how does the grid layout manage it? how come i the items are not shared into 4rows as specified? how the browser get the fr in px? */
