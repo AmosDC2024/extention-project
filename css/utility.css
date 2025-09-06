@@ -1,6 +1,8 @@
 .container{
   max-width: 75rem; 
-  margin: 0 auto;
+  margin: 0 auto; 
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 } 
 
 .py {
@@ -20,22 +22,24 @@
 .card{ 
   width: 100%;   
   max-width: 18rem; 
-  /* min-width: 10rem; */
   height: 150px; 
   background-color:hsl(226, 25%, 17%); 
   border-radius: 20px;  
-  box-shadow: 1px 1px hsl(226, 11%, 37%) ;
-  /* border: 1px solid hsl(226, 11%, 37%); */
+  box-shadow: 1px 1px hsl(226, 11%, 37%) ; 
+  outline: 1px solid red;
 
 }
-/* 
-@media (max-width:380px){  
-  .card{ 
-    margin: 0 auto; 
-    align-items: center; 
-    justify-content: center;
-   }
-} */
+
+@media (max-width:400px){  
+  .container{  
+    padding-right: 0;  
+  padding-left: 0; 
+} 
+
+body{ 
+  padding: 0 1.5rem;
+}
+}
 
 
 
