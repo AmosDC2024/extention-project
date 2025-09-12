@@ -26,8 +26,13 @@
   background-color:hsl(226, 25%, 17%); 
   border-radius: 20px;  
   box-shadow: 1px 1px hsl(226, 11%, 37%) ; 
-  outline: 1px solid red;
+  outline: 1px solid red; 
+  transition: 0.2s;
+} 
 
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width:400px){  

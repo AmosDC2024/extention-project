@@ -177,10 +177,10 @@ h2{
 
 .toggle-switch input:checked + .slider::before {
   transform: translateX(24px);
-} 
+}  
 
 
-/* lightmode */ 
+/* thememode */ 
 
 .dark-mode{ 
   color:  hsl(200, 60%, 99%);
