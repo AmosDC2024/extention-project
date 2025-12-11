@@ -200,7 +200,11 @@ h2{
 
 .cta-light-mode{ 
   color:hsl(227, 75%, 14%) ;
-} 
+}  
+.is-hidden { 
+  display: none ;
+}
+
 
 
 @media (max-width:980px) { 
